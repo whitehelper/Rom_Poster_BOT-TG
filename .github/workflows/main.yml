@@ -5,8 +5,8 @@ on:
     paths-ignore:
       - 'README.md'
       - 'LICENSE'
-      - 'postBot/config.py'
-      - 'postBot/post.py'
+      - 'postbot/config.py'
+      - 'postbot/post.py'
       - 'notes.txt'
       - 'sample_config.env'
       - 'config.env'
@@ -23,7 +23,7 @@ jobs:
         run: sudo pip install pyTelegramBotAPI python-dotenv telegraph
         
       - name: Run RomPosterBot
-        run: sudo -E python3 postBot/post.py
+        run: sudo -E python3 postbot/post.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }} 
