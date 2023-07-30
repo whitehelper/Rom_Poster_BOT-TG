@@ -60,7 +60,7 @@ if WITH_BUTTONS == "True":
     def button():
         buttons = InlineKeyboardMarkup()
         buttons.row_width = 2
-        button1 = InlineKeyboardButton(text="XDA", url=f"{XDA_POST}")
+        button1 = InlineKeyboardButton(text="4PDA", url=f"{XDA_POST}")
         button2 = InlineKeyboardButton(text="Support Group", url=f"https://t.me/{SUPPORT_GROUP}")
         button3 = InlineKeyboardButton(text="Download", url=f"{DOWNLOAD_URL}")
         return buttons.add(button1, button2, button3)
@@ -94,7 +94,7 @@ else:
         msg += f"<b>Build Date:</b> {BUILD_DATE}\n\n"
         msg += f"<b>Source Changelogs:</b> <a href='{SOURCE_CHANGELOG_URL}'>Here</a>\n"
         msg += f"<b>Device Changelogs:</b> <a href='https://telegra.ph/{telegraph_page}'>Here</a>\n\n"
-        msg += f"<b>XDA Thread:</b> <a href='{XDA_POST}'>Here</a>\n"
+        msg += f"<b>4PDA Post:</b> <a href='{XDA_POST}'>Here</a>\n"
         msg += f"<b>Download:</b> <a href='{DOWNLOAD_URL}'>Here</a>\n"
         msg += f"<b>Screenshots:</b> <a href='{SCREENSHOT_URL}'>Here</a>\n"
         msg += f"<b>MD5:</b> <code>{MD5}</code>\n\n"
